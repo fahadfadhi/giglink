@@ -1,0 +1,156 @@
+/* General Styles */
+.home {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-image: url('/Reactprojects/image/intro.jpg'); /*background image URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5); /* Add overlay for better visibility */
+  background-blend-mode: overlay;
+}
+
+/* Header Styles */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  color: #00d4ff;
+}
+
+/* Navigation */
+.home-nav .nav-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-nav .nav-btn:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+/* Home Content */
+.home-content {
+  margin-top: auto;
+  padding: 50px 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.home-motto {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.home-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+.home-footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 0;
+  margin-top: auto;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  max-width: 80%;
+  margin: auto;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-header {
+    flex-direction: column;
+  }
+
+  .home-nav .nav-btn {
+    margin: 5px 0;
+  }
+
+  .home-motto {
+    font-size: 2rem;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .stat-icon {
+    font-size: 1.2rem;
+  }
+}
